@@ -1,0 +1,175 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 15, 2021, 9:30:22 PM
+    Author     : Ryuu
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 15, 2021, 9:30:09 PM
+    Author     : Ryuu
+*/
+/*#F35973*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.left{
+    background-color: #2B2B2B;
+    width: 70%;
+    height: auto;
+}
+
+::selection {
+    background: rgba(0,0,0,0.3);
+    text-shadow: 2px 0 1px #ff3f1a, -2px 0 1px #00a7e0;
+    color: white;
+}
+
+
+
+.lateCD .lateCD-title .cd-container{
+    border-bottom: 2px solid #C64545;
+    color: #FFF;
+    justify-content: center;
+    align-content: center;
+    margin: 0 0 0 0 ;
+    height: 35px;
+}
+.lateCD .lateCD-title .altitle{
+    width: 20%;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 0 0;
+    padding: 6px 5px 5px 5px;
+    border-bottom: 1px solid #C64545;
+    background-color: #C64545;
+
+}
+@media(max-width: 1100px){
+    .lateCD .lateCD-title .altitle{
+        width: 40%;
+    }
+}
+.lateCD .album-container .card-container{
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+}
+.lateCD .album-container .card-content{
+    height: auto;
+    padding: 0 0 0 0;
+    background-color: #fafafa;
+}
+.lateCD .album-container .card-content .img{
+    height: 200px;
+    width: 100%;
+}
+.lateCD .album-container .card-content .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-container .card-content .card-img{
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.card-container .card-content .card-name h3{
+    margin: 0 0 5px 0;
+    font-size: 23px;
+}
+.card-container .card-content .card-name{
+    text-decoration: none;
+    color: #111;
+    padding: 10px 0px 0px 7px;
+    font-family: 'Playfair Display', serif;
+}
+.card-container .card-content .card-date, .card-container .card-content .card-excerpt{
+    padding: 0px 0px 0px 7px;
+    color: #111;
+}
+.card-container .card-content .card-date{
+    font-size: 10px;
+    color: #AAAAAA;
+}
+.card-container .card-content .card-excerpt{
+    color: #777777;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+
+/*paging*/
+.lateCD .clearfix{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lateCD .clearfix ul{
+    position: relative;
+    background-color: #002A32;
+    display: flex;
+    padding: 10px 10px;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+
+.lateCD .clearfix ul li a{
+    background-color: #494949;
+    color: #565656;
+    border-radius: 4px;
+    border: none;
+    list-style: none;
+    line-height: 25px;
+    margin: 0 10px;
+    box-shadow: inset 0 5px 10px rgba(0, 0, 0, .1), 0 2px 5px rgba(0, 0, 0, .5);
+    transition: 1s;
+}
+.lateCD .clearfix ul li a.active,
+.lateCD .clearfix ul li a:hover{
+    color: #00D6D6;
+    text-shadow:
+        0 0 10px #fff,
+        0 0 40px #0ff;
+    transition: 0s;
+
+}
+
+.lateCD .clearfix ul li .prev{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.lateCD .clearfix ul li .next{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+
+
+
+a.pageNumber.active{
+    background-color: #111;
+}
+
+
+
+@media(max-width: 750px){
+    .left{
+        width: 100%;
+    }
+}
+
+

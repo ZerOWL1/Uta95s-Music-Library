@@ -1,0 +1,190 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 18, 2021, 9:42:11 PM
+    Author     : Ryuu
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.left{
+    background-color: #2B2B2B;
+    width: 100%;
+    min-height: 125vh;
+}
+
+.album-container{
+    font-family: 'Lato', sans-serif;
+}
+
+::selection {
+    background: rgba(0,0,0,0.3);
+    text-shadow: 2px 0 1px #ff3f1a, -2px 0 1px #00a7e0;
+    color: white;
+}
+
+
+.lateCD .lateCD-title .cd-container{
+    border-bottom: 2px solid #C64545;
+    color: #FFF;
+    justify-content: center;
+    align-content: center;
+    margin: 0 0 0 0 ;
+    height: 35px;
+}
+.lateCD .lateCD-title .altitle{
+    width: 20%;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 0 0;
+    padding: 6px 5px 5px 5px;
+    border-bottom: 1px solid #C64545;
+    background-color: #C64545;
+}
+@media(max-width: 1100px){
+    .lateCD .lateCD-title .altitle{
+        width: 40%;
+    }
+}
+/*single details*/
+.lateCD .album-container .card-container{
+    font-family: 'Lato', sans-serif;
+    height: auto;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    background-color: #222629;
+    border: 0.5px solid #999999;
+    box-shadow: 6px 9px #35363A;
+    padding: 1em;
+}
+.card-container .navtab{
+    padding: 0 0 0 0;
+    height: 100%;
+    width: 100%;
+}
+.card-container .navtab .nav{
+    width: 20%;
+    height: 100%;
+}
+
+.card-container .navtab .tab-content{
+    padding: 10px 10px 10px 10px;
+    width: 80%;
+    height: auto;
+}
+
+.card-container .navtab .tab-content .tab-panel{
+    width: 100%;
+    height: 100%;
+}
+.card-container .navtab .nav button{
+    color: #999999;
+}
+.card-container .navtab .nav button i{
+    padding-right: 5px;
+}
+.card-container .navtab .nav .nav-link.active{
+    background-color: #3D4450;
+    color: #FFF;
+}
+.navtab .tab-content .tab-panel .tab-page{
+    width: 100%;
+    height: 200px;
+    display: flex;
+}
+
+/*Managerment*/
+.card-container .navtab .tab-content .tab-panel .tab-Manager{
+    width: 100%;
+    height: 100%;
+    background-color: #2E333A;
+
+}
+/*profile*/
+.tab-content .tab-panel .tab-page .img{
+    width: 100%;
+    height: 100%;
+}
+.tab-content .tab-panel .tab-page .block-space{
+    width: 75%;
+}
+.tab-content .tab-panel .tab-page .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tab-content .tab-panel .tab-form .profileName{
+    margin: 20px 0 20px 0;
+}
+.tab-content .tab-panel .tab-form .tab-submit{
+    padding: 5px 10px 5px 10px;
+    font-size: 15px;
+    background-color: #3D4450;
+    color: #DFE3E6;
+    border-radius: 5px;
+}
+.tab-content .tab-panel .tab-form .profileName .tab-input-content{
+    margin-bottom: 10px;
+    padding: 0px 10px;
+}
+.tab-content .tab-panel .tab-form .profileName .tab-input-content h6{
+    color: #969696;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.tab-content .tab-panel .tab-form .profileName .tab-input{
+    height: 40px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #18191C;
+    border-bottom-style: hidden;
+    border-right-style: hidden;
+}
+.tab-content .tab-panel .tab-form .profileName .tab-input:focus,
+.tab-content .tab-panel .tab-form .profileName .tab-input:read-write{
+    color: #fafafa;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid #080909;
+}
+
+.tab-content .tab-panel .tab-form .profileName .tab-img{
+    cursor: pointer;
+    width: 30%;
+    height: 100%;
+    color: #FFF;
+}
+
+.fade .tab-form .tab-container .warning{
+    color: #fafafa;
+    text-align: center;
+}
+.tab-form .tab-container .tab-wrong{
+    text-align: center;
+}
+.tab-form .tab-container .tab-wrong .wrong{
+    padding-left: 5px;
+    background: #F8D7DA;
+    border: 1px;
+    border-radius: 5px;
+}
+@media(max-width: 1000px){
+    .tab-content .tab-panel .tab-form .profileName .tab-img{
+        width: 100%;
+    }
+}
+@media(max-width: 750px){
+    .left{
+        width: 100%;
+    }
+}
+
+

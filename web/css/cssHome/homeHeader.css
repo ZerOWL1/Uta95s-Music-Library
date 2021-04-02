@@ -1,0 +1,112 @@
+body{
+    min-height: auto;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+::selection {
+    background: rgba(0,0,0,0.3);
+    text-shadow: 2px 0 1px #ff3f1a, -2px 0 1px #00a7e0;
+    color: white;
+}
+
+.navbar{
+    background-color: #002A32;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.navbar .navbar-brand{
+    color: #00D6D6;
+}
+.navbar .navbar-brand:hover{
+    color: #00D6D6;
+}
+.navbar .navbar-brand .logo{
+    width: 50px;
+}
+.navbar .navbar-brand .title-logo{
+    text-shadow: 2px 0 1px #ff3f1a, -2px 0 1px #00a7e0;
+    color: #fafafa;
+    margin: 3px 0 0 5px ;
+    position: relative;
+    width: auto;
+    text-transform: uppercase;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+}
+.navbar-brand{
+    position: relative;
+    text-transform: uppercase;
+    justify-content: center;
+    display: flex;
+}
+
+nav ul{
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+}
+
+nav ul li{
+    position: relative;
+}
+
+nav ul li a{
+    position: relative;
+    margin: 0 5px;
+    letter-spacing: 0.5px;    
+    font-size: 17px;
+    /*transition: 0.6s;*/
+}
+#navbarSupportedContent ul li .fas{
+    margin-right: 2px;
+}
+#navbarSupportedContent ul li .nav-link{
+    color: #00D6D6;
+    transition: 1s;
+}
+#navbarSupportedContent ul li .nav-link:hover{
+    transition: 0s;
+    color: #fff;
+}
+
+input[type=search]{
+    width: 105px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+input[type=search]:focus{
+    width: 400px;
+}
+
+/*account setting*/
+#navbarSupportedContent .nav-item .dropdown-menu .dropdown-item{
+    width: 94%;
+}
+
+@media(max-width: 1200px){
+    input[type=search]{
+        width: 105px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+    }
+    input[type=search]:focus{
+    width: 200px;
+}
+}
+
+@media(max-width: 1000px){
+    input[type=search]{
+        width: 100%;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+    }
+    input[type=search]:focus{
+    width: 100%;
+}
+}

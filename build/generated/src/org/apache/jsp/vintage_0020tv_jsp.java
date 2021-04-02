@@ -1,0 +1,271 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+
+public final class vintage_0020tv_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html;charset=UTF-8");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<!DOCTYPE html>\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("        <!-- require meta tag -->\n");
+      out.write("        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n");
+      out.write("        <!-- title -->\n");
+      out.write("        <title></title>\n");
+      out.write("        <!-- bootstrap css -->\n");
+      out.write("\n");
+      out.write("        <!-- css -->\n");
+      out.write("        <style>\n");
+      out.write("            *{\n");
+      out.write("                margin 0;\n");
+      out.write("                padding: 0;\n");
+      out.write("                box-sizing: border-box;\n");
+      out.write("            }\n");
+      out.write("            :root{\n");
+      out.write("                --background-main-color: black;\n");
+      out.write("            }\n");
+      out.write("            body {\n");
+      out.write("                width: 600px;\n");
+      out.write("                margin: 32px auto;\n");
+      out.write("                text-align: center;\n");
+      out.write("            }\n");
+      out.write("            iframe {\n");
+      out.write("                box-sizing: border-box;\n");
+      out.write("                width: 100%;\n");
+      out.write("                height: 100%;\n");
+      out.write("                overflow: hidden;\n");
+      out.write("                border: 10px solid;\n");
+      out.write("                border-radius: 32px;\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("            .television {\n");
+      out.write("                width: 450px;\n");
+      out.write("                margin: 0 auto;\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("            .television__top {\n");
+      out.write("                width: 40%;\n");
+      out.write("                margin: auto;\n");
+      out.write("                position: relative;\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("            .television__antenna {\n");
+      out.write("                width: 5px;\n");
+      out.write("                height: 100px;\n");
+      out.write("                background-color: #3b3733;\n");
+      out.write("                margin-bottom: -10px;\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("            .television__antenna--left {\n");
+      out.write("                transform: rotate(-30deg);\n");
+      out.write("                float: left;\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("            .television__antenna--right {\n");
+      out.write("                transform: rotate(30deg);\n");
+      out.write("                float: right;\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("            .television__antenna__base {\n");
+      out.write("                height: 20px;\n");
+      out.write("                background-color: #3b3733;\n");
+      out.write("                border-top-left-radius: 48px;\n");
+      out.write("                border-top-right-radius: 48px;\n");
+      out.write("                margin-bottom: 10px;\n");
+      out.write("                clear: both;\n");
+      out.write("                position: relative;\n");
+      out.write("                z-index: 2;\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("            .television__center {\n");
+      out.write("                position: relative;\n");
+      out.write("                z-index: 2;\n");
+      out.write("                width: 350px;\n");
+      out.write("                height: 200px;\n");
+      out.write("                background-color: #7a4e27;\n");
+      out.write("                border: solid 3px #eef4c4;\n");
+      out.write("                box-shadow: -10px -10px #d64832;\n");
+      out.write("                border-radius: 48px;\n");
+      out.write("                margin: 0 auto;\n");
+      out.write("                padding: 10px 15px;\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("            .television__screen {\n");
+      out.write("                width: 270px;\n");
+      out.write("                height: 190px;\n");
+      out.write("                background-color: #eed5b6;\n");
+      out.write("                border-radius: 48px;\n");
+      out.write("                float: left;\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("            .television__channels-wrapper {\n");
+      out.write("                width: 70px;\n");
+      out.write("                height: 190px;\n");
+      out.write("                background-color: #efd6b7;\n");
+      out.write("                border-radius: 48px;\n");
+      out.write("                float: right;\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("            .television__channels {\n");
+      out.write("                padding: 0;\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("            .television__channel {\n");
+      out.write("                list-style-type: none;\n");
+      out.write("                background-color: #7f4b23;\n");
+      out.write("                width: 25px;\n");
+      out.write("                height: 25px;\n");
+      out.write("                border-radius: 50%;\n");
+      out.write("                margin: 5px;\n");
+      out.write("                float: left;\n");
+      out.write("                position: relative;\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("            .television__channel a {\n");
+      out.write("                display: block;\n");
+      out.write("                position: absolute;\n");
+      out.write("                top: 50%;\n");
+      out.write("                left: 50%;\n");
+      out.write("                transform: translate(-50%, -50%);\n");
+      out.write("                background-color: #e6a146;\n");
+      out.write("                width: 12px;\n");
+      out.write("                height: 12px;\n");
+      out.write("                border-radius: 50%;\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("            .television__channel a:active {\n");
+      out.write("                box-shadow: inset rgba(255,255,255,0.6) 0 2px 2px,\n");
+      out.write("                    inset rgba(0,0,0,0.15) 0 -2px 5px, /* inner shadow */\n");
+      out.write("                    rgba(100,100,100,0.6) 0 2px 1px,\n");
+      out.write("                    rgba(100,100,100,0.6) 0 2px 1px; /* color border */\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("            .television__base {\n");
+      out.write("                width: 60%;\n");
+      out.write("                margin: auto;\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("            .television__base:after {\n");
+      out.write("                clear: both;\n");
+      out.write("                content: \"\";\n");
+      out.write("                display: table;\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("            .television__foot {\n");
+      out.write("                width: 20px;\n");
+      out.write("                height: 70px;\n");
+      out.write("                margin-top: -20px;\n");
+      out.write("                background-color: #7d4d25;\n");
+      out.write("                border: solid 3px #eed5b6;\n");
+      out.write("                border-radius: 48px;\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("            .television__foot--left {\n");
+      out.write("                transform: rotate(30deg);\n");
+      out.write("                float: left;\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("            .television__foot--right {\n");
+      out.write("                transform: rotate(-30deg);\n");
+      out.write("                float: right;\n");
+      out.write("            }\n");
+      out.write("\n");
+      out.write("            .p {\n");
+      out.write("                margin-top: 70px;\n");
+      out.write("            }\n");
+      out.write("        </style>\n");
+      out.write("    </head>\n");
+      out.write("    <body>\n");
+      out.write("        <div class=\"television\">\n");
+      out.write("            <div class=\"television__top\">\n");
+      out.write("                <div class=\"television__antenna television__antenna--left\"></div>\n");
+      out.write("                <div class=\"television__antenna television__antenna--right\"></div>\n");
+      out.write("                <div class=\"television__antenna__base\"></div>\n");
+      out.write("            </div><!-- television__top -->\n");
+      out.write("            <div class=\"television__center\">\n");
+      out.write("                <div class=\"television__screen\">\n");
+      out.write("                    <iframe src=\"https://www.youtube.com/embed/SRu6YRr1KtM\" frameborder=\"0\" allowfullscreen></iframe>\n");
+      out.write("                </div><!-- television__screen -->\n");
+      out.write("                <div class=\"television__channels-wrapper\">\n");
+      out.write("                    <ul class=\"television__channels\">\n");
+      out.write("                        <li class=\"television__channel\"><a href=\"https://www.youtube.com/embed/SRu6YRr1KtM\" title=\"Channel 1\"></a></li>\n");
+      out.write("                        <li class=\"television__channel\"><a href=\"https://www.youtube.com/embed/oRdxUFDoQe0\" title=\"Channel 2\"></a></li>\n");
+      out.write("                        <li class=\"television__channel\"><a href=\"https://www.youtube.com/embed/EGikhmjTSZI\" title=\"Channel 3\"></a></li>\n");
+      out.write("                        <li class=\"television__channel\"><a href=\"https://www.youtube.com/embed/06qJVpUSKZY\" title=\"Channel 4\"></a></li>\n");
+      out.write("                        <li class=\"television__channel\"><a href=\"https://www.youtube.com/embed/v_09wFxoaeQ\" title=\"Channel 5\"></a></li>\n");
+      out.write("                        <li class=\"television__channel\"><a href=\"https://www.youtube.com/embed/Tj75Arhq5ho\" title=\"Channel 6\"></a></li>\n");
+      out.write("                    </ul>\n");
+      out.write("                </div><!-- television__channels-wrapper -->\n");
+      out.write("            </div><!-- television__center -->\n");
+      out.write("            <div class=\"television__base\">\n");
+      out.write("                <div class=\"television__foot television__foot--left\"></div>\n");
+      out.write("                <div class=\"television__foot television__foot--right\"></div>\n");
+      out.write("            </div><!-- television__base -->\n");
+      out.write("        </div><!-- .television -->\n");
+      out.write("\n");
+      out.write("        <p class=\"p\">Demo by Annarita Tranfici. <a href=\"http://www.sitepoint.com/creating-vintage-television-using-bem-css3-javascript\">See article</a>.</p>\n");
+      out.write("\n");
+      out.write("        <script>\n");
+      out.write("            var buttons = document.querySelectorAll('.television__channel a');\n");
+      out.write("\n");
+      out.write("            for (var i = 0; i < buttons.length; i++) {\n");
+      out.write("                buttons[i].addEventListener('click', function (e) {\n");
+      out.write("                    document.querySelector('.television__screen iframe').src = this.href;\n");
+      out.write("                    e.preventDefault();\n");
+      out.write("                });\n");
+      out.write("            }\n");
+      out.write("        </script>\n");
+      out.write("    </body>\n");
+      out.write("</html>");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}

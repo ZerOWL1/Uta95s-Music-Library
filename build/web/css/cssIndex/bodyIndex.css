@@ -1,0 +1,251 @@
+/*
+Main Color
+Hex	RGB
+#00ff9f	(0,255,159) white green
+#00b8ff	(0,184,255) white blue
+#001eff	(0,30,255)  blue
+#bd00ff	(189,0,255) dark pink
+#d600ff	(214,0,255) pink
+#ff124f red
+#7a04eb purple
+#120458 dark blue
+#00f1ff very white blue
+#b0acb0 dark gray
+#e2dddf gray
+#85ebd9 white blue mix green
+#3d898d dark white blue mix green
+#2f404d very dark gray
+*/
+@font-face{
+    font-family: hello;
+    src: url('../..//font/hellodenverdisplayregular_v1.6.ttf');
+}
+.aboutus{
+    background: #000;
+    color: white;
+    display: block;
+}
+.img img{
+    margin-left: 25px;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.aboutus .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    cursor: default;
+}
+.aboutus .text h6{
+    color: #55EFC4;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+.aboutus .text h2{
+    color: #54e346;
+    text-shadow:
+        0 0 10px #fff,
+        0 0 20px #0f0;
+    font-weight: 500;
+    font-size: 2.3rem;
+    font-family: hello;
+    text-transform: uppercase;
+}
+.aboutus .text p{
+    color: #f2f2f2;
+    font-weight: 400;
+    font-size: 1.0rem;
+    letter-spacing: 0.5px;
+}
+.aboutus .text .more{
+    background-color: #54e346;
+    font-weight: 600;
+    padding: 0.4rem 0.8rem;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;  
+    text-decoration: none;
+    color: #111;
+}
+.aboutus .text a:hover{
+    color: #51713A;
+}
+
+/*discovery*/
+.discovery{
+    border-top: 1px solid #0f0;
+    background-color: #000;
+}
+.column{
+    float: left;
+}
+.discovery .image{
+    display: flex;
+}
+.image .right{
+    box-shadow: -5px -5px 5px -4px #fff,
+        -5px -5px 10px -4px #0f0;
+}
+.image .left{
+    box-shadow: 
+        5px -5px 5px -4px #fff,
+        5px -5px 10px -4px #0f0;
+}
+.image span{
+    width: 3px;
+    visibility: hidden;
+}
+/*text*/
+.discovery .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    cursor: default;
+}
+.discovery .text h6{
+    color: #54e346;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+.discovery .text h2{
+    color: #55EFC4;
+    text-shadow:
+        0 0 10px #fff,
+        0 0 20px #0f0;
+    font-weight: 500;
+    font-size: 2.3rem;
+    font-family: hello;
+    text-transform: uppercase;
+}
+.discovery .text p{
+    color: #f2f2f2;
+    font-weight: 400;
+    font-size: 1.0rem;
+    letter-spacing: 0.5px;
+}
+.discovery .text .more{
+    background-color: #55EFC4;
+    font-weight: 600;
+    padding: 0.4rem 0.8rem;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;  
+    text-decoration: none;
+    color: #111;
+}
+.discovery .text a:hover{
+    color: #51713A;
+}
+
+/*admin roles css*/
+.all-admin{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    background-color: #000;
+    border-bottom: 1px solid #0f0;
+}
+
+.admin{
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    align-content: center;
+}
+.admin-container{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.admin-container .admin-box{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 320px;
+    height: auto;
+    margin: 20px;
+    background: #000;
+    border: 1px solid #0f0;
+    border-radius: 5px;
+    box-shadow: 
+        0 0 10px #fff,
+        0 0 20px #0f0;
+}
+.admin-box .admin-content{
+    padding: 30px;
+    text-align: center;
+}
+.admin-box .admin-content .quotes{
+    margin-bottom: 5px;
+    max-width: 45px;
+}
+.admin-box .admin-content p{
+    border-top: 1px solid #0f0;
+    border-bottom: 1px solid #0f0;
+    color: #FFF;
+    padding: 20px 0;
+    margin: 0 0 0 0 ;
+}
+.admin-box .admin-content .admin-img{
+    margin-top: 5px;
+    max-width: 80px;
+    border-radius: 50%;
+    width: auto;
+    height: auto;
+}
+.admin-box .admin-content h3{
+    color: #33d1a0;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.admin-box .admin-content .admin2{
+    background: #666666;
+}
+@media(max-width: 1100px){
+    .admin-container{
+        justify-content: center;
+    }
+}
+@media(max-width: 750px){
+    .admin-container .admin-box{
+        width: 100%;
+        height: auto;
+        padding: 30px 20px;
+    }
+}
+
+/*admin title*/
+.title-admin{
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+}
+
+.title-admin .adminU{
+    color: #55EFC4;
+    font-family: hello;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow:  
+        0 0 10px #fff,
+        0 0 20px #0f0;
+}
+.title-admin .adminU:hover{
+    color: #54e346;
+    cursor: pointer;
+}
+
+/*show more showcase*/
+.row #more{
+    display: none;
+}
+.text #more2{
+    display: none;
+}
