@@ -41,8 +41,8 @@ public class MailVerify {
         
         // Sender's email ID needs to be mentioned
         String from = "uta95s.verify@gmail.com";
-        final String username = "uta95s.verify@gmail.com";
-        final String password = "pokemonlol123478kid";
+        final String username = "uta95s.verify@gmail.com"; //replace mail here
+        final String password = ""; //enter mail pass here
 
         // Assuming you are sending email through relay.jangosmtp.net
         String host = "smtp.gmail.com";
